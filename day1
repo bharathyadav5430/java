@@ -1,0 +1,145 @@
+Java programming 
+What is Java? 
+Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. 
+Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java.  
+Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform. 
+Application 
+1.	Desktop Applications such as acrobat reader, media player, antivirus, etc. 
+2.	Web Applications such as irctc.co.in, javatpoint.com, etc. 
+3.	Enterprise Applications such as banking applications. 
+4.	Mobile 
+5.	Embedded System 
+6.	Smart Card 
+7.	Robotics 8. Games, etc. 
+Features of Java 
+Simple 
+Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because: o Java syntax is based on C++ (so easier for programmers to learn it after C++). 
+o Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc. o There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java. 
+Object-oriented 
+Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behaviour. Platform Independent 
+  
+Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs. 
+Secured 
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because: 
+ 
+o	No explicit pointer 
+o	Java Programs run inside a virtual machine sandbox 
+Robust 
+The English mining of Robust is strong. Java is robust because: 
+o	It uses strong memory management. 
+o	There is a lack of pointers that avoids security problems. o Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore. 
+Architecture-natural 
+Java is architecture natural because there are no implementation dependent features, for example, the size of primitive types is fixed. 
+Portable 
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation. 
+High-performance 
+Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code.  
+Distributed 
+Java is distributed because it facilitates users to create distributed applications in Java. 
+Multi-threaded 
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads.  
+Dynamic 
+Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++. 
+ 
+First Java Program 
+o	class keyword is used to declare a class in Java. o public keyword is an access modifier that represents visibility. It means it is visible to all. 
+o	static is a keyword. If we declare any method as static, it is known as the static method. The core advantage of the static method is that there is no need to create an object to invoke the static method. The main() method is executed by the JVM, so it doesn't require creating an object to invoke the main() method. So, it saves memory. 
+o	void is the return type of the method. It means it doesn't return any value. 
+o	main represents the starting point of the program. o String[] args or String args[] is used for command line argument.  
+o	System.out.println() is used to print statement. Here, System is a class, out is an object of the PrintStream class, println() is a method of the PrintStream class.  
+What happens at runtime? 
+At runtime, the following steps are performed: 
+  
+Q) Can you save a Java source file by another name than the class name? 
+Yes, if the class is not public. It is explained in the figure given below: 
+  
+Q) Can you have multiple classes in a java source file? 
+Yes, like the figure given below illustrates: 
+  
+Difference between JDK, JRE, and JVM 
+JVM 
+JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment  
+JRE 
+JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment.  
+JDK 
+JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools. 
+Java Variables 
+A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type. 
+Variable is a name of memory location. There are three types of variables in java: local, instance and static. 
+1) Local Variable 
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists. 
+A local variable cannot be defined with "static" keyword. 
+2) Instance Variable 
+A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static. 
+3) Static variable 
+A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class.  
+Data Types in Java 
+Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java: 
+1.	Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double. 
+2.	Non-primitive 	data 	types: The 	non-primitive 	data 	types include Classes, Interfaces, and Arrays. 
+Unicode System 
+Unicode is a universal international standard character encoding that is  capable of representing most of the world's written languages. 
+Why java uses Unicode System? 
+Before Unicode, there were many language standards: o ASCII (American Standard Code for Information Interchange) for  the United States. 
+o	ISO 8859-1 for Western European Language. 
+o	KOI-8 for Russian. o GB18030 and BIG-5 for Chinese, and so on. 
+Problem 
+This caused two problems: 
+1.	A particular code value corresponds to different letters in the various  language standards. 
+2.	The encodings for languages with large character sets have variable length. 3. Some common characters are encoded as single bytes, other require  two or more byte. 
+Solution 
+To solve these problems, a new language standard was developed i.e. Unicode  System. 
+In unicode, character holds 2 byte, so java also uses 2 byte for characters. 
+lowest value:\u0000 highest value:\uFFFF 
+Operators in Java 
+Operator in Java is a symbol that is used to perform operations. For example: +, -, *, / etc. 
+There are many types of operators in Java which are given below: 
+o Unary Operator, o Arithmetic Operator, o Shift Operator, o Relational Operator, o Bitwise Operator, o Logical Operator, o Ternary Operator and o Assignment Operator. 
+Java Keywords 
+Java keywords are also known as reserved words. Keywords are particular words that act as a key to a code. These are predefined words by Java so they cannot be used as a variable or object name or class name. 
+   
+Java Control Statements | Control Flow in Java 
+Java provides three types of control flow statements. 
+1.	Decision Making statements o if statements o switch statement 
+2.	Loop statements o do while loop o while loop o for loop o for-each loop 
+3.	Jump statements o break statement o continue statement 
+Decision-Making statements: 
+As the name suggests, decision-making statements decide which statement to execute and when. 
+1) If Statement: 
+In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false.  
+2) if-else statement 
+The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. 
+3) if-else-if ladder: 
+The if-else-if statement contains the if-statement followed by multiple elseif statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true.  
+4. Nested if-statement 
+In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement. 
+Switch Statement: 
+In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched.  
+Loop Statements 
+In programming, sometimes we need to execute the block of code repeatedly while some condition evaluates to true. However, loop statements are used to execute the set of instructions in a repeated order. 
+1.	for loop 
+2.	while loop 
+3.	do-while loop 
+Java for loop 
+In Java, for loop is similar to C and C++. It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code. 
+Java for-each loop 
+Java provides an enhanced for loop to traverse the data structures like array or collection. In the for-each loop, we don't need to update the loop variable. The syntax to use the for-each loop in java is given below. 
+for(data_type var : array_name/collection_name){     
+//statements     
+ 
+} 
+ 
+Java while loop 
+The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. 
+Java do-while loop 
+The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop. 
+It is also known as the exit-controlled loop since the condition is not checked in advance. The syntax of the do-while loop is given below. do      
+{     
+//statements     
+} while (condition);     
+    Jump Statements 
+Jump statements are used to transfer the control of the program to the specific statements. In other words, jump statements transfer the execution control to the other part of the program. 
+Java break statement 
+As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement.  
+Java continue statement 
+Unlike break statement, the continue statement doesn't break the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop immediately. 
