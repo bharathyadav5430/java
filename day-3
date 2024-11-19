@@ -1,0 +1,25 @@
+ 
+ 
+Inheritance in Java 
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviours of a parent object. 
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship. 
+Why use inheritance in java o For Method Overriding (so runtime polymorphism can be achieved). 
+o For Code Reusability. 
+Types of inheritance in java 
+On the basis of class, there can be three types of inheritance in java: single, multilevel and hierarchical. 1) Single Inheritance 
+When a class inherits another class, it is known as a single inheritance.  
+     2)Multilevel Inheritance Example 
+When there is a chain of inheritance, it is known as multilevel inheritance.  
+    3)Hierarchical Inheritance Example 
+When two or more classes inherits a single class, it is known as hierarchical inheritance.  
+Q) Why multiple inheritance is not supported in java? 
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java. 
+Aggregation in Java 
+If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship. 
+Method Overloading in Java 
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading. 
+If we have to perform only one operation, having same name of the methods increases the readability of the program. 
+Q) Why Method Overloading is not possible by changing the return type of method only? 
+In java, method overloading is not possible by changing the return type of the method only because of ambiguity.  
+Q) Can we overload java main() method? 
+Yes, by method overloading. You can have any number of main methods in a class by method overloading. But JVM calls main() method which receives string array as arguments only. 
