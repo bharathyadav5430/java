@@ -1,0 +1,55 @@
+****Java Polymorphism***** 
+ 
+Method Overriding in Java 
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java. 
+In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding. 
+ 
+  
+Covariant Return Type 
+The covariant return type specifies that the return type may vary in the same direction as the subclass. 
+Super Keyword in Java 
+The super keyword in Java is a reference variable which is used to refer immediate parent class object. 
+  
+Instance initializer block 
+Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created. 
+Final Keyword in Java 
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be: 
+1.	variable 
+2.	method 
+3.	class 
+1) Java final variable 
+If you make any variable as final, you cannot change the value of final variable(It will be constant). 
+  
+2) Java final method 
+If you make any method as final, you cannot override it. 
+3) Java final class 
+If you make any class as final, you cannot extend it. Q) Is final method inherited? 
+Ans) Yes, final method is inherited but you cannot override it.  Q) What is blank or uninitialized final variable? 
+A final variable that is not initialized at the time of declaration is known as blank final variable. 
+Q) Can we initialize blank final variable? 
+Yes, but only in constructor. 
+Q) What is final parameter? 
+If you declare any parameter as final, you cannot change the value of it. 
+Q) Can we declare a constructor final? 
+No, because constructor is never inherited. 
+Polymorphism in Java 
+Polymorphism in Java is a concept by which we can perform a single action in different ways. 
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding. 
+Runtime Polymorphism in Java 
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time. 
+Upcasting 
+If the reference variable of Parent class refers to the object of Child class, it is known as upcasting. 
+Static Binding and Dynamic Binding 
+Connecting a method call to the method body is known as binding. 
+There are two types of binding 
+1.	Static Binding (also known as Early Binding). 
+2.	Dynamic Binding (also known as Late Binding). 
+  
+static binding 
+When type of the object is determined at compiled time (by the compiler), it is known as static binding. 
+Dynamic binding 
+When type of the object is determined at run-time, it is known as dynamic binding. 
+Java instanceof 
+The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface). 
+The instanceof in java is also known as type comparison operator because it compares the instance with type.  It returns either true or false. 
+ 
