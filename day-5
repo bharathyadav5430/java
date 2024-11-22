@@ -1,0 +1,46 @@
+Java Abstraction 
+ 
+Abstract class in Java 
+A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body). 
+Abstraction in Java 
+ 
+Abstraction is a process of hiding the implementation details and showing only functionality to the user. 
+Ways to achieve Abstraction 
+There are two ways to achieve abstraction in java 
+1.	Abstract class (0 to 100%) 
+2.	Interface (100%) 
+  
+Abstract Method in Java 
+A method which is declared as abstract and does not have implementation is known as an abstract method. 
+Interface in Java 
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.   
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java. 
+Why use Java interface? 
+There are mainly three reasons to use interface. They are given below. 
+o It is used to achieve abstraction. o By interface, we can support the functionality of multiple inheritance. o It can be used to achieve loose coupling. 
+Syntax: 
+interface <interface_name>{   
+       
+    // declare constant fields       // declare methods that abstract        // by default.   
+} 
+Q) What is marker or tagged interface? 
+An interface which has no member is known as a marker or tagged interface, for example, Serializable, Cloneable, Remote, etc. They are used to provide some essential information to the JVM so that JVM may perform some useful operation. 
+ 
+Difference between abstract class and interface 
+Abstract class 	Interface 
+
+1) Abstract class can have abstract and non-abstract methods. 	Interface can have only abstract methods. Since Java 8, it can have default and static methods also. 
+2) Abstract class doesn't support multiple inheritance. 	Interface supports multiple inheritance. 
+3) Abstract class can have final, nonfinal, static and non-static variables. 	Interface has only static and final variables. 
+4) Abstract class can provide the implementation of interface. 	Interface can't provide the implementation of abstract class. 
+5) The abstract keyword is used to declare abstract class. 	The interface keyword is used to declare interface. 
+6) An abstract class can extend another Java class and implement multiple Java interfaces. 	An interface can extend another Java interface only. 
+7) An abstract class can be extended using keyword "extends". 	An interface can be implemented using keyword "implements". 
+8) A Java abstract class can have class members like private, protected, etc. 	Members of a Java interface are public by default. 
+9)Example: 
+public abstract class Shape{ public abstract void draw(); 
+} 	Example: 
+public interface Drawable{ void 	draw(); 
+} 
+Simply, abstract class achieves partial abstraction (0 to 100%) whereas interface	 
+achieves fully abstraction (100%). 
