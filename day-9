@@ -1,0 +1,55 @@
+Java String 
+ 
+Java String 
+In Java, string is basically an object that represents sequence of char values. 
+An array of characters works same as Java string. For example: 
+char[] ch={'j','a','v','a','t','p','o','i','n','t'};   
+String s=new String(ch);   
+ 
+How to create a string object? 
+There are two ways to create String object: 
+1.	By string literal 
+2.	By new keyword 
+1) String Literal 
+Java String literal is created by using double quotes. For Example: 
+1. String s="welcome";   
+ 
+2) By new keyword 
+1. String s=new String("Welcome");//creates two objects and one reference va riable   
+ 
+Immutable String in Java 
+A String is an unavoidable type of variable while writing any application program. String references are used to store various attributes like username, password, etc. In Java, String objects are immutable. Immutable simply means unmodifiable or unchangeable. 
+Java String Buffer Class 
+Java String Buffer class is used to create mutable (modifiable) String objects. The String Buffer class in Java is the same as String class except it is mutable i.e. it can be changed. 
+Java StringBuilder Class 
+Java StringBuilder class is used to create mutable (modifiable) String. The Java StringBuilder class is same as StringBuffer class except that it is nonsynchronized. It is available since JDK 1.5. 
+Difference between String and String Buffer 
+  
+Difference between StringBuffer and StringBuilder 
+StringBuffer Class 	StringBuilder Class 
+ 
+StringBuffer is present in Java. 	 
+StringBuilder was introduced in Java 5. 
+ 
+StringBuffer is synchronized. This means that multiple threads cannot call the methods of StringBuffer simultaneously. 	 
+StringBuilder is asynchronized. This means that multiple threads can call the methods of 
+StringBuilder simultaneously. 
+StringBuffer Class 	StringBuilder Class 
+ 
+Due to synchronization, 
+StringBuffer is called a thread safe class. 	 
+Due to its asynchronous nature, StringBuilder is not a thread safe class. 
+ 
+Due to synchronization, StringBuffer is lot slower than StringBuilder. 	 
+Since there is no preliminary check for multiple threads, StringBuilder is a lot faster than StringBuffer. 
+ 
+How to create Immutable class? 
+There are many immutable classes like String, Boolean, Byte, Short, Integer, Long, Float, Double etc. In short, all the wrapper classes and String class is immutable.  
+Java toString() Method 
+If you want to represent any object as a string, toString() method comes into existence. 
+The toString() method returns the String representation of the object. 
+If you print any object, Java compiler internally invokes the toString() method on the object.  
+Advantage of Java toString() method 
+By overriding the toString() method of the Object class, we can return values of the object, so we don't need to write much code. 
+StringTokenizer in Java 
+The java.util.StringTokenizer class allows you to break a String into tokens. It is simple way to break a String. It is a legacy class of Java. 
