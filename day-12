@@ -1,0 +1,604 @@
+Java Collections 
+ 
+Collections in Java 
+The Collection in Java is a framework that provides an architecture to store 
+and manipulate the group of objects. 
+Java Collections can achieve all the operations that you perform on a data 
+such as searching, sorting, insertion, manipulation, and deletion. 
+Java Collection means a single unit of objects. Java Collection framework 
+provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, 
+Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet). 
+What is Collection in Java 
+A Collection represents a single unit of objects, i.e., a group. 
+What is a framework in Java 
+o It provides readymade architecture. 
+o It represents a set of classes and interfaces. 
+o It is optional. 
+What is Collection framework 
+The Collection framework represents a unified architecture for storing and 
+manipulating a group of objects. It has: 
+1. Interfaces and its implementations, i.e., classes 
+2. Algorithm 
+1) Java ArrayList 
+Java ArrayList class uses a dynamic array for storing the 
+elements. It is like an array, but there is no size limit. We can add 
+or remove elements anytime. So, it is much more flexible than the 
+58 | Page 
+ 
+traditional array. It is found in the java.util package. It is like the 
+Vector in C++. 
+o We can not create an array list of the primitive types, such as int, 
+float, char, etc. It is required to use the required wrapper class in 
+such cases. For example: 
+1. ArrayList<int> al = ArrayList<int>(); // does not work   
+2. ArrayList<Integer> al = new ArrayList<Integer>(); // works fine
+  
+ArrayList class declaration 
+Let's see the declaration for java.util.ArrayList class. 
+1. public class ArrayList<E> extends AbstractList<E> implements List
+ <E>, RandomAccess, Cloneable, Ser 
+ 
+Java Non-generic Vs. Generic Collection 
+Java collection framework was non-generic before JDK 1.5. Since 1.5, it is 
+generic. 
+Java new generic collection allows you to have only one type of object in a 
+collection. Now it is type-safe, so typecasting is not required at runtime. 
+Let's see the old non-generic example of creating a Java collection. 
+1. ArrayList list=new ArrayList();//creating old non-generic arraylist   
+Let's see the new generic example of creating java collection. 
+1. ArrayList<String> list=new ArrayList<String>();//creating new gener
+ ic arraylist   
+ 
+ 
+ 
+ 
+ 
+59 | Page 
+ 
+2) Java LinkedList class 
+Java LinkedList class uses a doubly linked list to store the elements. It 
+provides a linked-list data structure. It inherits the Abstract List class and 
+implements List and Deque interfaces. 
+The important points about Java LinkedList are: 
+o Java LinkedList class can contain duplicate elements. 
+o Java LinkedList class maintains insertion order. 
+o Java LinkedList class is non synchronized. 
+o In Java LinkedList class, manipulation is fast because no shifting needs 
+to occur. 
+o Java LinkedList class can be used as a list, stack or queue. 
+Hierarchy of LinkedList class 
+As shown in the above diagram, Java LinkedList class extends 
+AbstractSequentialList class and implements List and Deque interfaces. 
+ 
+ 
+60 | Page 
+ 
+Doubly Linked List 
+In the case of a doubly linked list, we can add or remove elements from both 
+sides. 
+ 
+LinkedList class declaration 
+Let's see the declaration for java.util.LinkedList class. 
+1. public class LinkedList<E> extends AbstractSequentialList<E> impl
+ ements List<E>, Deque<E>, Clonea 
+ 
+Difference Between ArrayList and LinkedList 
+ArrayList LinkedList 
+1) ArrayList internally uses 
+a dynamic array to store the 
+elements. 
+LinkedList internally uses 
+a doubly linked list to store the 
+elements. 
+2) Manipulation with ArrayList 
+is slow because it internally uses an 
+array. If any element is removed 
+from the array, all the other 
+elements are shifted in memory. 
+Manipulation with LinkedList 
+is faster than ArrayList because 
+it uses a doubly linked list, so no 
+bit shifting is required in memory. 
+3) An ArrayList class can act as a 
+list only because it implements List 
+only. 
+LinkedList class can act as a list 
+and queue both because it 
+implements List and Deque 
+interfaces. 
+4) ArrayList is better for storing 
+and accessing data. 
+LinkedList is better for 
+manipulating data. 
+61 | Page 
+ 
+5) The memory location for the 
+elements of an ArrayList is 
+contiguous. 
+The location for the elements of a 
+linked list is not contagious. 
+6) Generally, when an ArrayList is 
+initialized, a default capacity of 10 
+is assigned to the ArrayList. 
+There is no case of default 
+capacity in a LinkedList. In 
+LinkedList, an empty list is 
+created when a LinkedList is 
+initialized. 
+7) To be precise, an ArrayList is a 
+resizable array. 
+LinkedList implements the 
+doubly linked list of the list 
+interface. 
+ 
+ 
+Java List 
+List in Java provides the facility to maintain the ordered collection. It 
+contains the index-based methods to insert, update, delete and search the 
+elements. It can have the duplicate elements also. We can also store the null 
+elements in the list. 
+The List interface is found in the java.util package and inherits the Collection 
+interface. It is a factory of ListIterator interface. Through the ListIterator, we 
+can iterate the list in forward and backward directions. The implementation 
+classes of List interface are ArrayList, LinkedList, Stack and Vector. The 
+ArrayList and LinkedList are widely used in Java programming. The Vector 
+class is deprecated since Java 5. 
+Java HashSet 
+Java HashSet class is used to create a collection that uses a hash table for 
+storage. It inherits the AbstractSet class and implements Set interface. 
+ 
+62 | Page 
+ 
+ 
+The important points about Java HashSet class are: 
+o HashSet stores the elements by using a mechanism called hashing. 
+o HashSet contains unique elements only. 
+o HashSet allows null value. 
+o HashSet class is non synchronized. 
+o HashSet doesn't maintain the insertion order. Here, elements are 
+inserted on the basis of their hashcode. 
+o HashSet is the best approach for search operations. 
+o The initial default capacity of HashSet is 16, and the load factor is 0.75. 
+Java LinkedHashSet Class 
+ 
+63 | Page 
+ 
+Java LinkedHashSet class is a Hashtable and Linked list implementation of 
+the Set interface. It inherits the HashSet class and implements the Set 
+interface. 
+The important points about the Java LinkedHashSet class are: 
+o Java LinkedHashSet class contains unique elements only like HashSet. 
+o Java LinkedHashSet class provides all optional set operations and 
+permits null elements. 
+o Java LinkedHashSet class is non-synchronized. 
+o Java LinkedHashSet class maintains insertion order. 
+Java TreeMap class 
+ 
+Java TreeMap class is a red-black tree based implementation. It 
+provides an efficient means of storing key-value pairs in sorted 
+order. 
+The important points about Java TreeMap class are: 
+o Java TreeMap contains values based on the key. It implements 
+the NavigableMap interface and extends AbstractMap class. 
+o Java TreeMap contains only unique elements. 
+64 | Page 
+ 
+o Java TreeMap cannot have a null key but can have multiple null 
+values. 
+o Java TreeMap is non synchronized. 
+o Java TreeMap maintains ascending order. 
+Java TreeSet class 
+ 
+Java TreeSet class implements the Set interface that uses a tree for storage. 
+It inherits AbstractSet class and implements the NavigableSet interface. 
+The objects of the TreeSet class are stored in ascending order. 
+The important points about the Java TreeSet class are: 
+o Java TreeSet class contains unique elements only like HashSet. 
+o Java TreeSet class access and retrieval times are quiet fast. 
+o Java TreeSet class doesn't allow null element. 
+o Java TreeSet class is non synchronized. 
+o Java TreeSet class maintains ascending order. 
+Backward Ski 
+ 
+p 10s 
+65 | Page 
+ 
+Java Queue Interface 
+The interface Queue is available in the java.util package and does extend the 
+Collection interface. It is used to keep the elements that are processed in the 
+First In First Out (FIFO) manner. It is an ordered list of objects, where 
+insertion of elements occurs at the end of the list, and removal of elements 
+occur at the beginning of the list. 
+Being an interface, the queue requires, for the declaration, a concrete class, 
+and the most common classes are the LinkedList and PriorityQueue in Java. 
+Implementations done by these classes are not thread safe. If it is required to 
+have a thread safe implementation, PriorityBlockingQueue is an available 
+option. 
+Features of a Queue 
+The following are some important features of a queue. 
+o As discussed earlier, FIFO concept is used for insertion and deletion of 
+elements from a queue. 
+o The Java Queue provides support for all of the methods of the 
+Collection interface including deletion, insertion, etc. 
+o PriorityQueue, ArrayBlockingQueue and LinkedList are the 
+implementations that are used most frequently. 
+o The NullPointerException is raised, if any null operation is done on the 
+BlockingQueues. 
+o Those Queues that are present in the util package are known as 
+Unbounded Queues. 
+o Those Queues that are present in the util.concurrent package are 
+known as bounded Queues. 
+o All Queues barring the Deques facilitates removal and insertion at the 
+head and tail of the queue; respectively. In fact, deques support element 
+insertion and removal at both ends. 
+66 | Page 
+ 
+PriorityQueue Class 
+PriorityQueue is also class that is defined in the collection framework that 
+gives us a way for processing the objects on the basis of priority. It is already 
+described that the insertion and deletion of objects follows FIFO pattern in 
+the Java queue. However, sometimes the elements of the queue are needed 
+to be processed according to the priority, that's where a PriorityQueue comes 
+into action. 
+Java Deque Interface 
+The interface called Deque is present in java.util package. It is the subtype 
+of the interface queue. The Deque supports the addition as well as the 
+removal of elements from both ends of the data structure. Therefore, a deque 
+can be used as a stack or a queue. We know that the stack supports the Last 
+In First Out (LIFO) operation, and the operation First In First Out is 
+supported by a queue. As a deque supports both, either of the mentioned 
+operations can be performed on it. Deque is an acronym for "double ended 
+queue". 
+Java Hashtable class 
+Java Hashtable class implements a hashtable, which maps keys to 
+values. It inherits Dictionary class and implements the Map 
+interface. 
+Points to remember 
+o A Hashtable is an array of a list. Each list is known as a bucket. 
+The position of the bucket is identified by calling the 
+hashcode() method. A Hashtable contains values based on the 
+key. 
+o Java Hashtable class contains unique elements. 
+o Java Hashtable class doesn't allow null key or value. 
+o Java Hashtable class is synchronized. 
+67 | Page 
+ 
+The initial default capacity of Hashtable class is 11 whereas 
+loadFactor is 0.75 
+Java Map Interface 
+A map contains values on the basis of key, i.e. key and value pair. Each key 
+and value pair is known as an entry. A Map contains unique keys. 
+A Map is useful if you have to search, update or delete elements on the basis 
+of a key. 
+Java Map Hierarchy 
+There are two interfaces for implementing Map in java: Map and SortedMap, 
+and three classes: HashMap, LinkedHashMap, and TreeMap. A Map doesn't 
+allow duplicate keys, but you can have duplicate values. HashMap and 
+LinkedHashMap allow null keys and values, but TreeMap doesn't allow any 
+null key or value. 
+A Map can't be traversed, so you need to convert it into Set 
+using keySet() or entrySet() method. 
+Java HashMap 
+ 
+Java HashMap class implements the Map interface which allows us to store 
+key and value pair, where keys should be unique. If you try to insert the 
+duplicate key, it will replace the element of the corresponding key. It is easy 
+68 | Page 
+ 
+to perform operations using the key index like updation, deletion, etc. 
+HashMap class is found in the java.util package. 
+HashMap in Java is like the legacy Hashtable class, but it is not synchronized. 
+It allows us to store the null elements as well, but there should be only one 
+null key. Since Java 5, it is denoted as HashMap<K,V>, where K stands for 
+key and V for value. It inherits the AbstractMap class and implements the 
+Map interface. 
+Points to remember 
+o Java HashMap contains values based on the key. 
+o Java HashMap contains only unique keys. 
+o Java HashMap may have one null key and multiple null values. 
+o Java HashMap is non synchronized. 
+o Java HashMap maintains no order. 
+o The initial default capacity of Java HashMap class is 16 with a load 
+factor of 0.75. 
+Java EnumSet class 
+Java EnumSet class is the specialized Set implementation for use 
+with enum types. It inherits AbstractSet class and implements the 
+Set interface. 
+EnumSet class declaration 
+Let's see the declaration for java.util.EnumSet class. 
+1. public abstract class EnumSet<E extends Enum<E>> exten
+ ds AbstractSet<E> implements Cloneable, Serializable   
+ 
+ 
+ 
+ 
+69 | Page 
+ 
+Difference between HashMap and Hashtable 
+HashMap and Hashtable both are used to store data in key and value 
+form. Both are using hashing technique to store unique keys. 
+HashMap Hashtable 
+1) HashMap is non 
+synchronized. It is not-thread 
+safe and can't be shared 
+between many threads without 
+proper synchronization code. 
+Hashtable is synchronized. It is 
+thread-safe and can be shared with 
+many threads. 
+2) HashMap allows one null 
+key and multiple null values. 
+Hashtable doesn't allow any null 
+key or value. 
+3) HashMap is a new class 
+introduced in JDK 1.2. 
+Hashtable is a legacy class. 
+4) HashMap is fast. Hashtable is slow. 
+5) We can make the HashMap 
+as synchronized by calling this 
+code 
+Map m = 
+Collections.synchronizedMap(
+ hashMap); 
+Hashtable is internally synchronized 
+and can't be unsynchronized. 
+6) HashMap is traversed by 
+Iterator. 
+Hashtable is traversed by 
+Enumerator and Iterator. 
+7) Iterator in HashMap is fail
+fast. 
+Enumerator in Hashtable is not fail
+fast. 
+8) HashMap 
+inherits AbstractMap class. 
+Hashtable inherits Dictionary class. 
+70 | Page 
+ 
+Java LinkedHashMap class 
+ 
+Java LinkedHashMap class is Hashtable and Linked list 
+implementation of the Map interface, with predictable iteration 
+order. It inherits HashMap class and implements the Map interface. 
+Points to remember 
+o Java LinkedHashMap contains values based on the key. 
+o Java LinkedHashMap contains unique elements. 
+o Java LinkedHashMap may have one null key and multiple null 
+values. 
+o Java LinkedHashMap is non synchronized. 
+o Java LinkedHashMap maintains insertion order. 
+o The initial default capacity of Java HashMap class is 16 with a 
+load factor of 0.75. 
+ 
+ 
+ 
+ 
+ 
+71 | Page 
+ 
+Java Collections class 
+Java collection class is used exclusively with static methods that 
+operate on or return collections. It inherits Object class. 
+The important points about Java Collections class are: 
+o Java Collection class supports the polymorphic 
+algorithms that operate on collections. 
+o Java Collection class throws a NullPointerException if the 
+collections or class objects provided to them are null. 
+Difference between Comparable and 
+Comparator 
+ 
+o Comparable and Comparator both are interfaces and can be used to sort 
+collection elements. 
+o However, there are many differences between Comparable and 
+Comparator interfaces that are given below. 
+Comparable Comparator 
+1) Comparable provides a single sorting 
+sequence. In other words, we can sort the 
+collection on the basis of a single element 
+such as id, name, and price. 
+The Comparator 
+provides multiple sorting 
+sequences. In other words, we 
+can sort the collection on the 
+basis of multiple elements such 
+as id, name, and price etc. 
+2) Comparable affects the original class, 
+i.e., the actual class is modified. 
+Comparator doesn't affect the 
+original class, i.e., the actual 
+class is not modified. 
+72 | Page 
+ 
+3) Comparable provides compareTo() 
+method to sort elements. 
+Comparator provides compare() 
+method to sort elements. 
+4) Comparable is present 
+in java.lang package. 
+A Comparator is present in 
+the java.util package. 
+5) We can sort the list elements of 
+Comparable type 
+by Collections.sort(List) method. 
+We can sort the list elements of 
+Comparator type 
+by Collections.sort(List, 
+Comparator) method. 
+ 
+Difference between ArrayList and Vector 
+ 
+ 
+ 
+ 
+ 
+73 | Page 
+ 
+Java Vector 
+Vector is like the dynamic array which can grow or shrink its size. 
+Unlike array, we can store n-number of elements in it as there is no 
+size limit. It is a part of Java Collection framework since Java 1.2. It 
+is found in the java.util package and implements the List interface, 
+so we can use all the methods of List interface here. 
+It is recommended to use the Vector class in the thread-safe 
+implementation only. If you don't need to use the thread-safe 
+implementation, you should use the ArrayList, the ArrayList will 
+perform better in such case. 
+The Iterators returned by the Vector class are fail-fast. In case of 
+concurrent modification, it fails and throws the 
+ConcurrentModificationException. 
+Java Stack 
+The stack is a linear data structure that is used to store the collection 
+of objects. It is based on Last-In-First-Out (LIFO). Java 
+collection framework provides many interfaces and classes to store 
+the collection of objects. One of them is the Stack class that 
+provides different operations such as push, pop, search, etc. 
+In this section, we will discuss the Java Stack class, 
+its methods, and implement the stack data structure in a Java 
+program. But before moving to the Java Stack class have a quick 
+view of how the stack works. 
+The stack data structure has the two most important operations that 
+are push and pop. The push operation inserts an element into the 
+stack and pop operation removes an element from the top of the 
+stack. Let's see how they work on stack. 
+74 | Page 
+ 
+ 
+Java JDBC 
+JDBC stands for Java Database Connectivity. JDBC is a Java API to connect 
+and execute the query with the database. It is a part of JavaSE (Java Standard 
+Edition). JDBC API uses JDBC drivers to connect with the database. There 
+are four types of JDBC drivers: 
+o JDBC-ODBC Bridge Driver, 
+o Native Driver, 
+o Network Protocol Driver, and 
+o Thin Driver 
+The java.sql package contains classes and interfaces for JDBC API. A list of 
+popular interfaces of JDBC API are given below: 
+o Driver interface 
+o Connection interface 
+o Statement interface 
+o PreparedStatement interface 
+o CallableStatement interface 
+o ResultSet interface 
+o ResultSetMetaData interface 
+o DatabaseMetaData interface 
+o RowSet interface 
+75 | Page 
+ 
+A list of popular classes of JDBC API are given below: 
+o DriverManager class 
+o Blob class 
+o Clob class 
+o Types class 
+Why Should We Use JDBC 
+Before JDBC, ODBC API was the database API to connect and execute the 
+query with the database. But, ODBC API uses ODBC driver which is written 
+in C language (i.e. platform dependent and unsecured).  
+Java Reflection API 
+Java Reflection is a process of examining or modifying the run time 
+behavior of a class at run time. 
+The java.lang.Class class provides many methods that can be used 
+to get metadata, examine and change the run time behavior of a 
+class. 
+The java.lang and java.lang.reflect packages provide classes for java 
+reflection. 
+ 
+JDBC Driver 
+JDBC Driver is a software component that enables java application to 
+interact with the database. There are 4 types of JDBC drivers: 
+1. JDBC-ODBC bridge driver 
+2. Native-API driver (partially java driver) 
+3. Network Protocol driver (fully java driver) 
+4. Thin driver (fully java driver) 
+76 | Page 
+ 
+1) JDBC-ODBC bridge driver 
+The JDBC-ODBC bridge driver uses ODBC driver to connect to the database. 
+The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC 
+function calls. 
+Advantages: 
+o easy to use. 
+o can be easily connected to any database. 
+Disadvantages: 
+o Performance degraded because JDBC method call is converted into the 
+ODBC function calls. 
+o The ODBC driver needs to be installed on the client machine. 
+ 
+2) Native-API driver 
+The Native API driver uses the client-side libraries of the database. The driver 
+converts JDBC method calls into native calls of the database API. It is not 
+written entirely in java. 
+Advantage: 
+o performance upgraded than JDBC-ODBC bridge driver. 
+Disadvantage: 
+o The Native driver needs to be installed on the each client machine. 
+o The Vendor client library needs to be installed on client machine. 
+3) Network Protocol driver 
+The Network Protocol driver uses middleware (application server) that 
+converts JDBC calls directly or indirectly into the vendor-specific database 
+protocol. It is fully written in java. 
+Advantage: 
+o No client side library is required because of application server that can 
+perform many tasks like auditing, load balancing, logging etc. 
+77 | Page 
+ 
+Disadvantages: 
+o Network support is required on client machine. 
+o Requires database-specific coding to be done in the middle tier. 
+o Maintenance of Network Protocol driver becomes costly because it 
+requires database-specific coding to be done in the middle tier. 
+4) Thin driver 
+The thin driver converts JDBC calls directly into the vendor-specific database 
+protocol. That is why it is known as thin driver. It is fully written in Java 
+language. 
+Advantage: 
+o Better performance than all other drivers. 
+o No software is required at client side or server side. 
+Disadvantage: 
+o Drivers depend on the Database. 
+Java Database Connectivity with 5 Steps 
+ 
+ 
+78 | Page 
+ 
+1) Register the driver class 
+The forName() method of Class class is used to register the driver class. This 
+method is used to dynamically load the driver class. 
+Syntax of forName() method 
+1. public static void forName(String className)throws ClassNotFound
+ Exception   
+ 
+2) get connection object 
+The getConnection() method of DriverManager class is used to establish 
+connection with the database. 
+Syntax of getConnection() method 
+1. 1) public static Connection getConnection(String url)throws SQLEx
+ ception   
+2. 2) public static Connection getConnection(String url,String name,Stri
+ ng password)   
+3. throws SQLException   
+ 
+3) Create the Statement object 
+The createStatement() method of Connection interface is used to create 
+statement. The object of statement is responsible to execute queries with the 
+database. 
+Syntax of createStatement() method 
+1. public Statement createStatement()throws SQLException  
+  
+4) Execute the query 
+The executeQuery() method of Statement interface is used to execute queries 
+to the database. This method returns the object of ResultSet that can be used 
+to get all the records of a table. 
+Syntax of executeQuery() method 
+1. public ResultSet executeQuery(String sql)throws SQLException   
+ 
+79 | Page 
+ 
+5) Close the connection object 
+By closing connection object statement and ResultSet will be closed 
+automatically. The close() method of Connection interface is used to close the 
+connection. 
+Syntax of close() method 
+1. public void close()throws SQLException   
+ 
+ 
